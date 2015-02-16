@@ -1,0 +1,3 @@
+[submodule "Assets/networked-third-person-player-controller"]
+	path = Assets/networked-third-person-player-controller
+	url = https://github.com/calben/networked-third-person-player-controller
