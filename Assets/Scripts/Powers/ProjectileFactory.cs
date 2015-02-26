@@ -24,7 +24,7 @@ public class ProjectileFactory : MonoBehaviour
     public ProjectileAction _projectileAction = ProjectileAction.THROW;
 
     //Rate of fire
-    public float _cooldown = 0.5;
+    public float _cooldown = 0.5f;
     float _cooldownTimer;
 
     //Controller properties
