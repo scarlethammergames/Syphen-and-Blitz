@@ -6,20 +6,16 @@ public class PlayerHealth : MonoBehaviour {
 	public int maxHealth=100;
 	private int currentHealth;
 	public GameObject gameManager;
-	private InGameStats gameStats;
 	private bool dead;
 	
 	void Start() {
 		currentHealth = maxHealth;
-		gameStats = gameManager.GetComponent<InGameStats> ();
 		dead = false;
 	}
 
 	public void decreaseHealth(int amount) {
 		currentHealth -= amount;
-		//If player runs out of health, tell game manager player died
-		if (!dead && currentHealth <= 0) {
-			gameStats.playerDied();
+		if (currentHealth <= 0) {
 			dead = true;
 		}
 	}
