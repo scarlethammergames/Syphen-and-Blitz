@@ -5,6 +5,7 @@ using System.Collections;
 using GamepadInput;
 
 public enum ProjectileAction { THROW, BEAM, ATTACH_TO_SELF, REMOTE_CTRL }
+public enum ProjectileMovementBehaviour { GROUNDED, SPORADIC, BULLET }
 public enum ProjectileTriggerButton { LEFT, RIGHT }
 
 /**
